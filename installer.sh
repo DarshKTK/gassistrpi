@@ -9,4 +9,6 @@ env/bin/python -m pip install --upgrade pip setuptools --upgrade
 source env/bin/activate
 python -m pip install --upgrade https://github.com/googlesamples/assistant-sdk-python/releases/download/0.5.1/google_assistant_sdk-0.5.1-py2.py3-none-any.whl
 python -m pip install --upgrade google-auth-oauthlib[tool]
+source env/bin/activate
+google-oauthlib-tool --client-secrets /home/pi/Downloads/YOUR_DOWNLOADED_JSON_FILE_GOES_HERE --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
 exit 0
